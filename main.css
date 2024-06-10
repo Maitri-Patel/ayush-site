@@ -1,0 +1,125 @@
+/* Assignment 1 | COMP1073 Client-Side JavaScript */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+    background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: white;
+    font-size: 18px;
+}
+
+/* Button styles */
+button {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #063709; /* Darker green on hover */
+}
+
+/* Story section styles */
+#story {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.vertical-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid white;
+}
+
+.horizontal-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.button-container button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    border: 2px solid white;
+}
+/* Keyframe animation for button hover effect */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.button-container button:hover {
+    animation: pulse 0.5s linear;
+}
+.button-container button:hover {
+    background-color: #063709; /* Darker green on hover */
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+    button {
+        font-size: 14px;
+    }
+}
